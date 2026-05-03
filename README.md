@@ -901,6 +901,7 @@ body {
         <span class="skill-chip hot">CATIA V5</span>
         <span class="skill-chip">Parts &amp; Assemblies</span>
         <span class="skill-chip">Sheet Metal</span>
+        <span class="skill-chip">Surface Modelling</span>
       </div>
     </div>
     <div class="skill-group">
