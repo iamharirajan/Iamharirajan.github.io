@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HARIRAJAN M — Aerospace Design Engineer</title>
+<title>HARIRAJAN M — Junior Design Engineer · Rocket &amp; Missile Systems</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;900&family=Barlow:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -688,6 +688,22 @@ body {
   .yt-section { padding: 2rem; }
   .exp-bullets { grid-template-columns: 1fr; }
 }
+
+/* ═══ INTRO VIDEO ═══ */
+.intro-wrap { display:grid; grid-template-columns:minmax(240px,340px) 1fr; gap:3rem; align-items:center; }
+.intro-video-frame { background:#000; border:1px solid var(--border); border-top:3px solid var(--nasa-red); aspect-ratio:478/850; max-height:78vh; width:100%; overflow:hidden; }
+.intro-video-frame video { width:100%; height:100%; object-fit:contain; display:block; background:#000; }
+.intro-label { font-family:var(--mono); font-size:11px; color:var(--nasa-red); letter-spacing:0.2em; margin-bottom:1rem; }
+.intro-title { font-family:var(--display); font-weight:700; font-size:clamp(28px,4vw,44px); line-height:1.08; text-transform:uppercase; color:var(--nasa-white); margin-bottom:1rem; max-width:18ch; }
+.intro-text { color:var(--text-secondary); font-size:15px; max-width:56ch; margin-bottom:1.75rem; }
+.intro-facts { display:flex; flex-direction:column; gap:10px; max-width:56ch; }
+.intro-fact { display:flex; gap:16px; padding:10px 0; border-top:1px solid var(--border); font-size:14px; }
+.intro-fact-k { font-family:var(--mono); font-size:11px; color:var(--accent-cyan); letter-spacing:0.12em; min-width:84px; padding-top:2px; }
+.intro-fact-v { color:var(--text-primary); }
+@media (max-width:760px) { .intro-wrap { grid-template-columns:1fr; gap:1.5rem; } .intro-video-frame { max-width:340px; margin:0 auto; } }
+.launch-wrap { margin-bottom:3rem; grid-template-columns:1fr minmax(240px,340px); }
+.launch-wrap .launch-frame { order:2; aspect-ratio:9/16; }
+@media (max-width:760px) { .launch-wrap { grid-template-columns:1fr; } .launch-wrap .launch-frame { order:0; } }
 </style>
 </head>
 <body>
@@ -701,6 +717,7 @@ body {
     <div class="nasa-bar-title">HARI<span>RAJAN</span> · M</div>
   </div>
   <div class="nasa-bar-nav">
+    <a href="#intro" class="nav-link">Intro</a>
     <a href="#missions" class="nav-link">Projects</a>
     <a href="#experience" class="nav-link">Experience</a>
     <a href="#systems" class="nav-link">Skills</a>
@@ -718,25 +735,26 @@ body {
   <div class="hero-bg-img"></div>
   <div class="hero-gradient"></div>
   <div class="hero-content">
-    <div class="mission-badge">Mission Status: Active · Design Trainee</div>
+    <div class="mission-badge">Mission Status: Active · Junior Design Engineer</div>
     <div class="hero-callsign">// AE-DESIGN · PROPULSION SYSTEMS</div>
     <h1 class="hero-name">HARI<span class="accent">RAJAN</span><br>M</h1>
     <div class="hero-title-bar">
       <div class="hero-title-line"></div>
-      <div class="hero-title">Aerospace &amp; Propulsion Design Engineer</div>
+      <div class="hero-title">Junior Design Engineer — Rocket &amp; Missile Systems</div>
     </div>
     <p class="hero-desc">
-      Mechanical design engineer specializing in rocket and missile systems. 
-      Creating production-ready hardware from nozzles to airframes — where precision engineering meets the edge of the atmosphere.
+      Junior Design Engineer at Space Zone Aerospace, designing rocket and missile hardware from concept to hot-fire.
+      Designed the Rhumi twin rocket, successfully launched by the company, and developed the vertical and horizontal test beds. Hands-on across the full cycle: SolidWorks design, fabrication, assembly, and live static fire testing.
     </p>
     <div class="hero-specs">
       <div class="spec-item">SolidWorks · CATIA V5</div>
-      <div class="spec-item">Propulsion Hardware</div>
-      <div class="spec-item">Structures &amp; Airframes</div>
+      <div class="spec-item">Rhumi Twin Rocket</div>
+      <div class="spec-item">Static Fire Testing</div>
       <div class="spec-item">Madurai, India</div>
     </div>
     <div class="hero-ctas">
       <a href="mailto:iamharirajan2002@gmail.com" class="btn-primary">✉ Contact Mission Control</a>
+      <a href="#intro" class="btn-outline">▶ Watch Intro</a>
       <a href="#missions" class="btn-outline">↓ View Projects</a>
       <a href="https://www.youtube.com/@nebulaspacetime" target="_blank" class="btn-yt">▶ Nebula Spacetime</a>
       <a href="https://www.instagram.com/nebulaspacetime" target="_blank" class="btn-ig">◈ Instagram</a>
@@ -750,31 +768,58 @@ body {
     <span class="ticker-item">SOLIDWORKS DESIGN</span>
     <span class="ticker-item">CATIA V5 · PROPULSION SYSTEMS</span>
     <span class="ticker-item">ROCKET NOZZLE ENGINEERING</span>
-    <span class="ticker-item">CUBESAT PROTOTYPES</span>
+    <span class="ticker-item">TEST BEDS · VERTICAL &amp; HORIZONTAL</span>
     <span class="ticker-item">STATIC FIRE TEST OPERATIONS</span>
-    <span class="ticker-item">SPACE ZONE AEROSPACE · DESIGN TRAINEE</span>
+    <span class="ticker-item">SPACE ZONE AEROSPACE · JUNIOR DESIGN ENGINEER</span>
     <span class="ticker-item">IELTS B2 · NCC C CERTIFICATE</span>
-    <span class="ticker-item">CFD LEARNING IN PROGRESS</span>
+    <span class="ticker-item">RHUMI TWIN ROCKET · LAUNCHED</span>
     <span class="ticker-item">NEBULA SPACETIME · YOUTUBE CHANNEL</span>
     <span class="ticker-item">INSTAGRAM · @NEBULASPACETIME</span>
     <!-- repeat for seamless loop -->
     <span class="ticker-item">SOLIDWORKS DESIGN</span>
     <span class="ticker-item">CATIA V5 · PROPULSION SYSTEMS</span>
     <span class="ticker-item">ROCKET NOZZLE ENGINEERING</span>
-    <span class="ticker-item">CUBESAT PROTOTYPES</span>
+    <span class="ticker-item">TEST BEDS · VERTICAL &amp; HORIZONTAL</span>
     <span class="ticker-item">STATIC FIRE TEST OPERATIONS</span>
-    <span class="ticker-item">SPACE ZONE AEROSPACE · DESIGN TRAINEE</span>
+    <span class="ticker-item">SPACE ZONE AEROSPACE · JUNIOR DESIGN ENGINEER</span>
     <span class="ticker-item">IELTS B2 · NCC C CERTIFICATE</span>
-    <span class="ticker-item">CFD LEARNING IN PROGRESS</span>
+    <span class="ticker-item">RHUMI TWIN ROCKET · LAUNCHED</span>
     <span class="ticker-item">NEBULA SPACETIME · YOUTUBE CHANNEL</span>
     <span class="ticker-item">INSTAGRAM · @NEBULASPACETIME</span>
   </div>
 </div>
 
+<!-- INTRO VIDEO -->
+<section class="section" id="intro">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <span class="section-title">Mission Briefing / Intro</span>
+    <div class="section-line"></div>
+  </div>
+  <div class="intro-wrap">
+    <div class="intro-video-frame">
+      <video controls playsinline preload="metadata" poster="assets/intro-poster.jpg">
+        <source src="assets/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="intro-copy">
+      <div class="intro-label">// Junior Design Engineer · Space Zone Aerospace</div>
+      <h2 class="intro-title">Designing flight hardware that has to survive the test stand.</h2>
+      <p class="intro-text">A short walkthrough of what I do: designing fins, nozzles, airframes and other critical components, and why design iteration and design for manufacturability matter before a part ever reaches the machine shop.</p>
+      <div class="intro-facts">
+        <div class="intro-fact"><span class="intro-fact-k">Designed</span><span class="intro-fact-v">Rhumi twin rocket, launched by Space Zone Aerospace</span></div>
+        <div class="intro-fact"><span class="intro-fact-k">Developed</span><span class="intro-fact-v">Vertical and horizontal test beds for engine testing</span></div>
+        <div class="intro-fact"><span class="intro-fact-k">Tools</span><span class="intro-fact-v">SolidWorks, CATIA V5, 3D printing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- PROJECTS -->
 <section class="section" id="missions">
   <div class="section-header">
-    <span class="section-num">01</span>
+    <span class="section-num">02</span>
     <span class="section-title">Mission Manifest / Projects</span>
     <div class="section-line"></div>
   </div>
@@ -785,52 +830,65 @@ body {
       <div style="font-size:13px;color:var(--text-secondary);">Due to confidentiality agreements, specific design data, drawings, and test details are not displayed. Project descriptions reflect scope only.</div>
     </div>
   </div>
+  <div class="intro-wrap launch-wrap">
+    <div class="intro-video-frame launch-frame">
+      <video controls playsinline preload="metadata" poster="assets/rhumi-launch-poster.jpg">
+        <source src="assets/rhumi-launch.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="intro-copy">
+      <div class="intro-label">// MISSION-001 · LAUNCH FOOTAGE</div>
+      <h2 class="intro-title">Rhumi twin rocket, off the pad.</h2>
+      <p class="intro-text">Launch footage of the Rhumi twin rocket, the vehicle I designed at Space Zone Aerospace and which the company launched successfully.</p>
+    </div>
+  </div>
   <div class="missions-grid">
     <div class="mission-card">
-      <div class="mission-id">MISSION-001 · PROPULSION</div>
-      <div class="mission-name">Propulsion Component Design</div>
+      <div class="mission-id">MISSION-001 · LAUNCH VEHICLE</div>
+      <div class="mission-name">Rhumi Twin Rocket</div>
       <div class="mission-desc">
-        Full design packages for nozzles, injectors, pyrotechnic valves, fins, airframes, and fuel grains — complete with tolerances and material callouts for manufacturing release.
+        Designed the Rhumi twin rocket at Space Zone Aerospace — successfully launched by the company.
       </div>
       <div class="mission-tags">
-        <span class="mission-tag">Hybrid Systems</span>
-        <span class="mission-tag">Solid Propulsion</span>
+        <span class="mission-tag">Launched</span>
         <span class="mission-tag">SolidWorks</span>
+        <span class="mission-tag">Space Zone Aerospace</span>
       </div>
     </div>
     <div class="mission-card">
       <div class="mission-id">MISSION-002 · STRUCTURES</div>
-      <div class="mission-name">Rocket Engine Static Test Bed</div>
+      <div class="mission-name">Vertical &amp; Horizontal Test Beds</div>
       <div class="mission-desc">
-        Structural design engineered to withstand engine thrust loads; supported live static fire operations end-to-end. Present during actual test execution.
+        Developed both the vertical and horizontal test bed structures for rocket engine testing, and supported live static fire operations.
       </div>
       <div class="mission-tags">
         <span class="mission-tag">Structures</span>
         <span class="mission-tag">Test Systems</span>
-        <span class="mission-tag">Live Operations</span>
+        <span class="mission-tag">SolidWorks</span>
       </div>
     </div>
     <div class="mission-card">
       <div class="mission-id">MISSION-003 · SATELLITE</div>
-      <div class="mission-name">CubeSat / NanoSat Prototypes</div>
+      <div class="mission-name">CubeSat &amp; NanoSat Prototype Models</div>
       <div class="mission-desc">
-        3D-printed satellite structural frames to validate fit and assembly — reducing iteration time before machined production using Ultimaker Cura and PrusaSlicer.
+        3D printed structural frames to validate fit and assembly, cutting iteration time before machined production.
       </div>
       <div class="mission-tags">
-        <span class="mission-tag">FDM Printing</span>
-        <span class="mission-tag">Cura</span>
+        <span class="mission-tag">Ultimaker Cura</span>
         <span class="mission-tag">PrusaSlicer</span>
+        <span class="mission-tag">3D Printing</span>
       </div>
     </div>
     <div class="mission-card">
       <div class="mission-id">MISSION-004 · INNOVATION</div>
       <div class="mission-name">Solar-Powered Mobile Case</div>
       <div class="mission-desc">
-        PV-integrated mobile case designed in CATIA V5. Selected for the state-level Naan Mudhalvan innovation program — recognized statewide for engineering excellence.
+        Designed a solar-powered mobile case using CATIA V5 Generative Shape Design (surface modeling) as part of the Naan Mudhalvan Program.
       </div>
       <div class="mission-tags">
         <span class="mission-tag">CATIA V5</span>
-        <span class="mission-tag">State Selected</span>
+        <span class="mission-tag">Surface Modeling</span>
         <span class="mission-tag">Naan Mudhalvan</span>
       </div>
     </div>
@@ -840,7 +898,7 @@ body {
 <!-- EXPERIENCE -->
 <section class="section section-alt" id="experience">
   <div class="section-header">
-    <span class="section-num">02</span>
+    <span class="section-num">03</span>
     <span class="section-title">Flight Log / Experience</span>
     <div class="section-line"></div>
   </div>
@@ -850,7 +908,7 @@ body {
       <div class="exp-header-content">
         <div>
           <div class="exp-org">Space Zone Aerospace</div>
-          <div class="exp-role">Design Trainee · Chengalpattu, Tamil Nadu</div>
+          <div class="exp-role">Junior Design Engineer · Chengalpattu, Tamil Nadu</div>
         </div>
         <div class="exp-date">DEC 2025 – PRESENT</div>
       </div>
@@ -859,27 +917,23 @@ body {
       <div class="exp-bullets">
         <div class="exp-bullet">
           <div class="bullet-marker"></div>
-          <span>Designed nozzles, injectors, pyrotechnic valves (hybrid), fins, airframe sections, and fuel grains — delivering production-ready drawings in SolidWorks.</span>
+          <span>Design nozzles, injectors, pyrotechnic valves, fins, airframe sections, fuel grains, and other flight-critical rocket components in SolidWorks, delivering production-ready drawings with tolerances and material callouts.</span>
         </div>
         <div class="exp-bullet">
           <div class="bullet-marker"></div>
-          <span>Designed static test bed structures for engine static fire operations; present during live test execution supporting real propulsion testing.</span>
+          <span>Produce mechanical drawings to aerospace standards and run DFM assessments before manufacturing release.</span>
         </div>
         <div class="exp-bullet">
           <div class="bullet-marker"></div>
-          <span>Involved in engine assembly and disassembly on propulsion hardware, gaining direct hands-on understanding of fit and function.</span>
+          <span>Support live static fire operations and engine assembly/disassembly, building first-hand understanding of fit, function, and failure modes.</span>
         </div>
         <div class="exp-bullet">
           <div class="bullet-marker"></div>
-          <span>Fabricated fuel grains and 3D printed prototype components including CubeSat/NanoSat models using Ultimaker Cura and PrusaSlicer.</span>
+          <span>Fabricate fuel grains and 3D print prototype components and CubeSat/NanoSat models to validate fit before machining.</span>
         </div>
         <div class="exp-bullet">
           <div class="bullet-marker"></div>
-          <span>Handled full procurement workflow — prepared specs and BOMs, coordinated with vendors on materials and parts procurement.</span>
-        </div>
-        <div class="exp-bullet">
-          <div class="bullet-marker"></div>
-          <span>Produced mechanical drawings to aerospace standards; conducted DFM assessments before manufacturing release across multiple component types.</span>
+          <span>Own procurement workflow — specifications, BOMs, and vendor coordination for materials and parts.</span>
         </div>
       </div>
     </div>
@@ -889,7 +943,7 @@ body {
 <!-- SKILLS -->
 <section class="section" id="systems">
   <div class="section-header">
-    <span class="section-num">03</span>
+    <span class="section-num">04</span>
     <span class="section-title">Systems &amp; Capabilities</span>
     <div class="section-line"></div>
   </div>
@@ -899,13 +953,13 @@ body {
       <div class="skill-chips">
         <span class="skill-chip hot">SolidWorks</span>
         <span class="skill-chip hot">CATIA V5</span>
-        <span class="skill-chip">Parts &amp; Assemblies</span>
-        <span class="skill-chip">Sheet Metal</span>
-        <span class="skill-chip">Surface Modelling</span>
+        <span class="skill-chip">Parts</span>
+        <span class="skill-chip">Assemblies</span>
+        <span class="skill-chip">Drawings</span>
       </div>
     </div>
     <div class="skill-group">
-      <div class="skill-group-label">// Aerospace Design</div>
+      <div class="skill-group-label">// Flight Hardware Design</div>
       <div class="skill-chips">
         <span class="skill-chip">Nozzles</span>
         <span class="skill-chip">Injectors</span>
@@ -916,25 +970,23 @@ body {
       </div>
     </div>
     <div class="skill-group">
-      <div class="skill-group-label">// Manufacturing</div>
+      <div class="skill-group-label">// Manufacturing &amp; Prototyping</div>
       <div class="skill-chips">
         <span class="skill-chip">3D Printing</span>
+        <span class="skill-chip">Ultimaker Cura</span>
+        <span class="skill-chip">PrusaSlicer</span>
+        <span class="skill-chip">Fuel Grain Fabrication</span>
+        <span class="skill-chip">Engine Assembly/Disassembly</span>
         <span class="skill-chip">DFM</span>
-        <span class="skill-chip">BOM</span>
-        <span class="skill-chip">GD&amp;T</span>
-        <span class="skill-chip">Procurement</span>
       </div>
     </div>
     <div class="skill-group">
-      <div class="skill-group-label">// Additional</div>
+      <div class="skill-group-label">// Other</div>
       <div class="skill-chips">
+        <span class="skill-chip">Procurement &amp; Vendor Coordination</span>
+        <span class="skill-chip">BOMs</span>
+        <span class="skill-chip">Mechanical Drawings</span>
         <span class="skill-chip">C Programming</span>
-        <span class="skill-chip">Technical Drawing</span>
-        <span class="skill-chip">Vendor Coordination</span>
-      </div>
-      <div class="currently-learning">
-        <div class="cl-label">// Currently Learning</div>
-        <div class="cl-value">Computational Fluid Dynamics (CFD)</div>
       </div>
     </div>
   </div>
@@ -945,7 +997,7 @@ body {
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;flex-wrap:wrap;">
     <div>
       <div class="section-header" style="margin-bottom:2rem;">
-        <span class="section-num">04</span>
+        <span class="section-num">05</span>
         <span class="section-title">Education</span>
         <div class="section-line"></div>
       </div>
@@ -954,14 +1006,16 @@ body {
           <div class="edu-deg">B.E. Mechanical Engineering</div>
           <div class="edu-school">Anna University Regional Campus, Madurai</div>
           <div class="edu-meta">
-            <span class="edu-badge">2020–2024</span>
+            <span class="edu-badge">2021–2024</span>
+            <span class="edu-badge">CGPA 7.75</span>
           </div>
         </div>
         <div class="edu-item">
-          <div class="edu-deg">Diploma — Mechanical Eng.</div>
+          <div class="edu-deg">Diploma — Mechanical Engineering</div>
           <div class="edu-school">Latha Mathavan Polytechnic College</div>
           <div class="edu-meta">
             <span class="edu-badge">2018–2021</span>
+            <span class="edu-badge">92%</span>
           </div>
         </div>
         <div class="edu-item">
@@ -969,36 +1023,44 @@ body {
           <div class="edu-school">EBG Matriculation Hr. Secondary School</div>
           <div class="edu-meta">
             <span class="edu-badge">2018</span>
+            <span class="edu-badge">80%</span>
           </div>
         </div>
       </div>
     </div>
     <div>
       <div class="section-header" style="margin-bottom:2rem;">
-        <span class="section-num">05</span>
+        <span class="section-num">06</span>
         <span class="section-title">Achievements</span>
         <div class="section-line"></div>
       </div>
       <div class="cert-grid" style="grid-template-columns:1fr;">
         <div class="cert-card">
+          <div class="cert-icon">🚀</div>
+          <div>
+            <div class="cert-name">Rhumi Twin Rocket</div>
+            <div class="cert-sub">Designed by me — successfully launched by Space Zone Aerospace</div>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🔧</div>
+          <div>
+            <div class="cert-name">Vertical &amp; Horizontal Test Beds</div>
+            <div class="cert-sub">Developed for rocket engine testing</div>
+          </div>
+        </div>
+        <div class="cert-card">
           <div class="cert-icon">🌐</div>
           <div>
             <div class="cert-name">IELTS — B2 Level</div>
-            <div class="cert-sub">Upper Intermediate English Proficiency</div>
+            <div class="cert-sub">Upper Intermediate, April 2024</div>
           </div>
         </div>
         <div class="cert-card">
           <div class="cert-icon">🏅</div>
           <div>
             <div class="cert-name">NCC C Certificate</div>
-            <div class="cert-sub">National Cadet Corps — Leadership &amp; National Service</div>
-          </div>
-        </div>
-        <div class="cert-card">
-          <div class="cert-icon">🚀</div>
-          <div>
-            <div class="cert-name">Naan Mudhalvan — State Level</div>
-            <div class="cert-sub">Solar-powered mobile case innovation selected statewide</div>
+            <div class="cert-sub">National Cadet Corps — leadership &amp; national service</div>
           </div>
         </div>
       </div>
@@ -1009,7 +1071,7 @@ body {
 <!-- YOUTUBE -->
 <section class="section" id="channel">
   <div class="section-header">
-    <span class="section-num">06</span>
+    <span class="section-num">07</span>
     <span class="section-title">Transmissions / YouTube</span>
     <div class="section-line"></div>
   </div>
@@ -1030,7 +1092,7 @@ body {
 <!-- CONTACT -->
 <section class="section section-alt" id="contact">
   <div class="section-header">
-    <span class="section-num">07</span>
+    <span class="section-num">08</span>
     <span class="section-title">Open Channel / Contact</span>
     <div class="section-line"></div>
   </div>
@@ -1045,6 +1107,12 @@ body {
       <div style="font-family:var(--mono);font-size:10px;color:var(--nasa-red);letter-spacing:0.2em;margin-bottom:1rem;">// LOCATION</div>
       <div style="font-family:var(--display);font-size:22px;font-weight:700;text-transform:uppercase;color:var(--nasa-white);margin-bottom:4px;">Base of Operations</div>
       <div style="font-size:14px;color:var(--text-secondary);">Madurai, Tamil Nadu, India</div>
+    </div>
+    <div style="flex:1;min-width:260px;background:var(--panel-bg);border:1px solid var(--border);padding:2rem;">
+      <div style="font-family:var(--mono);font-size:10px;color:var(--nasa-red);letter-spacing:0.2em;margin-bottom:1rem;">// PROFESSIONAL</div>
+      <div style="font-family:var(--display);font-size:22px;font-weight:700;text-transform:uppercase;color:var(--nasa-white);margin-bottom:4px;">LinkedIn</div>
+      <div style="font-size:14px;color:var(--text-secondary);margin-bottom:1.5rem;">harirajan-m-7170b6265</div>
+      <a href="https://www.linkedin.com/in/harirajan-m-7170b6265" target="_blank" rel="noopener" class="btn-primary" style="font-size:12px;padding:10px 24px;">Connect</a>
     </div>
     <div style="flex:1;min-width:260px;background:var(--panel-bg);border:1px solid var(--border);padding:2rem;">
       <div style="font-family:var(--mono);font-size:10px;color:var(--nasa-red);letter-spacing:0.2em;margin-bottom:1rem;">// BROADCAST CHANNEL</div>
@@ -1064,10 +1132,10 @@ body {
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-left">
-    HARIRAJAN M · AEROSPACE &amp; PROPULSION DESIGN ENGINEER · MADURAI, INDIA
+    HARIRAJAN M · JUNIOR DESIGN ENGINEER · ROCKET &amp; MISSILE SYSTEMS · MADURAI, INDIA
   </div>
   <div class="footer-right">
-    DESIGNED &amp; ENGINEERED TO REACH ORBIT · 2025
+    DESIGNED &amp; ENGINEERED TO REACH ORBIT · 2026
   </div>
 </footer>
 
